@@ -1,0 +1,616 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;700&display=swap');
+/* Mobile and up */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Signika Negative', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Signika Negative', sans-serif;
+}
+
+section > p {
+    margin: 1rem 0 2rem;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 2rem auto;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #181818;
+    padding: 1rem;
+}
+
+form {
+    margin: 2rem auto;
+    width: 100%;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    border: 1px solid grey;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    outline: none;
+    width: 100%;
+}
+
+textarea {
+    max-height: 24.5rem;
+    min-height: 8rem;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+input:focus,
+textarea:focus {
+    border: 1px solid #181818;
+}
+
+.btn-submit,
+.btn-primary {
+    background-color: #40584a;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.btn-submit {
+    border: 0;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.btn-submit:focus {
+    border: 0;
+}
+
+.btn-primary {
+    display: block;
+    margin: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-submit:hover,
+.btn-primary:hover {
+    background-color: #181818;
+}
+
+.page-header {
+    background-color: #547a64;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-logo img {
+    width: 200px;
+}
+
+.mobile-btn {
+    margin-bottom: 1rem;
+}
+
+.mobile-btn img {
+    width: 3.5rem;
+}
+
+.page-navigation {
+    display: none;
+    padding-bottom: 1rem;
+    width: 100%;
+}
+
+.navigation-list {
+    list-style: none;
+    text-align: center;
+}
+
+.navigation-list li {
+    margin: 0.5rem 0;
+}
+
+.navigation-list a {
+     color: white; 
+    display: block;
+    font-size: 1.2rem;
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+}
+
+.show-navigation {
+    display: block;
+}
+
+.page-content {
+    flex: 1;
+}
+
+.page-footer {
+    background-color: #40584a;
+}
+
+.footer-content {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.footer-content p {
+    color: white;
+    margin: 2rem 0;
+}
+
+.footer-content a {
+    color: #181818;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin: 0.5rem 0;
+}
+
+.hero {
+    background-image: url("../images/Meals.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    backdrop-filter: blur(1000px);
+}
+
+.hero-text {
+    background-color: #181818aa;
+    color: white;
+    font-size: 1.1rem;
+    margin: 0 1rem 2rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.hero-title {
+    margin-bottom: 0.5rem;
+}
+
+.content-section {
+    margin: 2rem 1rem 4rem;
+}
+
+.content-section > .btn-primary {
+    margin: 1rem auto;
+
+}
+
+.products-container,
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product,
+.gallery-card {
+    margin: 2rem 0;
+    text-decoration: none;
+}
+
+.gallery-card {
+    margin-bottom: 0;
+}
+
+.product {
+    width: 100%;
+}
+
+.gallery-card {
+    width: 47.5%;
+}
+
+.product img,
+.gallery-card img {
+    width: 100%;
+}
+
+.product-title {
+    color: #181818;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.product:hover .product-title,
+.gallery-card:hover .product-title {
+    color: #181818;
+}
+
+.content-video {
+    height: 0;
+    margin-bottom: 4rem;
+    padding-bottom: 56.25%;
+    position: relative;
+    width: 100%;
+}
+
+.content-video iframe {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#reviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.review-page-content {
+    letter-spacing: 1px;
+    margin: 30px 0px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-heading h1 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    background-color: #181818;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+
+.review-heading span {
+    font-size: 1.3rem;
+    color: #181818;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.review-box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%
+}
+
+.review-box {
+    width: 1000px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.user-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name strong {
+    color: #181818;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.profile {
+    display: flex;
+    align-items: center;
+}
+.profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.reviews {
+    color: #181818;
+}
+
+.box-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.client-comments p {
+    font-size: 0.9rem;
+    color: #181818;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.menus {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .menu-column {
+    width: 31%;
+  }
+  .menu-column h4 {
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  .menu-column h4:before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: #547a64;
+    bottom: 0;
+  }
+  .single-menu {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+   .single-menu .menu-content h5 {
+    text-transform: capitalize;
+    font-size: 22px;
+    font-weight: 500;
+    border-bottom: 1px dashed #181818;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  } 
+  .single-menu .menu-content h5 span {
+    color: #181818;
+    float: right;
+    font-weight: 600;
+    font-style: italic;
+  }
+
+
+/* Tablet only */
+@media only screen and (min-width: 550px) and (max-width: 1000px) {
+    form {
+        width: 75%;
+    }
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .menus {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      .menu-column {
+        width: 31%;
+      }
+      .menu-column h4 {
+        text-transform: capitalize;
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        position: relative;
+        padding-bottom: 10px;
+      }
+      .menu-column h4:before {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 2px;
+        background-color: #547a64;
+        bottom: 0;
+      }
+      .single-menu {
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+      }
+      
+       .single-menu .menu-content h5 {
+        text-transform: capitalize;
+        font-size: 22px;
+        font-weight: 500;
+        border-bottom: 1px dashed #181818;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+      } 
+      .single-menu .menu-content h5 span {
+        color: #181818;
+        float: right;
+        font-weight: 600;
+        font-style: italic;
+      }
+}
+
+
+.product {
+    width: 47.5%;
+}
+
+/* Desktop and up */
+@media only screen and (min-width: 1001px) {
+  .mobile-btn {
+    display: none;
+  }
+
+  .page-navigation {
+    display: block;
+  }
+
+  .navigation-list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navigation-list a:hover {
+    text-decoration: underline;
+  }
+
+  .hide-on-desktop {
+    display: none;
+  }
+
+  .content-section {
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+  }
+
+  .btn-primary {
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+  }
+
+  .content-section > .btn-primary {
+    width: 50%;
+  }
+
+  .fooer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 980px;
+  }
+
+  .footer-content p {
+    order: -1;
+  }
+
+  .hero {
+    align-items: center;
+    height: 400px;
+  }
+
+  .hero-text {
+    padding: 1.5rem 2rem;
+  }
+
+  .product,
+  .gallery-card {
+    width: 30%;
+  }
+
+  form {
+    width: 50%;
+  }
+
+  .menu {
+    width: 1170px;
+    margin: 100px auto;
+  }
+  .section-title {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  .section-title h2 {
+    text-transform: capitalize;
+    font-size: 35px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+  }
+  .section-title h2:before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background-color: #547a64;
+    bottom: 0;
+    left: 50%;
+  }
+  
+/* Products Page */
+  .menus {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .menu-column {
+    width: 22%;
+  }
+
+  .menu-column h4 {
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+  }
+
+  .menu-column h4:before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: #547a64;
+    bottom: 0;
+  }
+
+  .single-menu {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+   .single-menu .menu-content h5 {
+    text-transform: capitalize;
+    font-size: 22px;
+    font-weight: 500;
+    border-bottom: 1px dashed #181818;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  } 
+
+  .single-menu .menu-content h5 span {
+    color: #181818;
+    float: right;
+    font-weight: 600;
+    font-style: italic;
+  }
+
+}
